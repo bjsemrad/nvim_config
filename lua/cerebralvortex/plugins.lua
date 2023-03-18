@@ -17,6 +17,17 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
+  use 'mfussenegger/nvim-jdtls'
+  use 'nvim-lua/plenary.nvim'
+  use 'ThePrimeagen/harpoon'
+  use({
+	  "Pocco81/auto-save.nvim",
+	  config = function()
+		  require("auto-save").setup {
+		  }
+	  end
+
+  })
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   		require("toggleterm").setup()
 	end

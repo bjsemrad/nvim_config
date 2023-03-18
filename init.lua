@@ -30,5 +30,5 @@ local function open_nvim_tree()
 end
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
-
+vim.g.nvim_tree_respect_buf_cwd = 1
 require("cerebralvortex")
